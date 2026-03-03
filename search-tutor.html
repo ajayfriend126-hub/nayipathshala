@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Tutor - NayiPaathshala</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html" class="brand">
+            <img src="image/logo.png">
+            <span>NayiPaathshala</span>
+        </a>
+    </div>
+</nav>
+
+<section class="search-section">
+    <h2>Find Tutor Near You</h2>
+
+    <div class="search-filters">
+
+        <!-- Class -->
+        <select id="classFilter">
+            <option value="">Select Class</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+
+        <!-- Subject 1 -->
+        <select id="subjectFilter">
+            <option value="">Select Subject</option>
+            <option>Mathematics</option>
+            <option>Science</option>
+            <option>English</option>
+            <option>Social Science</option>
+        </select>
+
+        <!-- Subject 2 -->
+        <select id="subjectFilter2" style="display:none;">
+            <option value="">Second Subject (Optional)</option>
+            <option>Mathematics</option>
+            <option>Science</option>
+            <option>English</option>
+            <option>Social Science</option>
+        </select>
+
+        <button onclick="addSecondSubject()">+ Add Subject</button>
+
+        <!-- Country -->
+        <select id="countryFilter">
+            <option>India</option>
+        </select>
+
+        <!-- State -->
+        <select id="stateFilter" onchange="loadDistricts()">
+            <option value="">Select State</option>
+        </select>
+
+        <!-- District -->
+        <select id="districtFilter">
+            <option value="">Select District</option>
+        </select>
+
+        <button onclick="searchTutor()" class="primary-btn">Search</button>
+
+    </div>
+
+    <div id="tutorResults" class="tutor-results"></div>
+</section>
+
+<!-- BOOKING POPUP -->
+<div class="booking-popup" id="bookingPopup">
+    <div class="booking-box">
+        <h3>Book Tutor</h3>
+        <input type="text" id="studentName" placeholder="Your Name">
+        <input type="text" id="studentPhone" placeholder="Your Phone">
+        <button onclick="confirmBooking()" class="primary-btn">Confirm Booking</button>
+        <button onclick="closeBooking()" class="close-btn">Cancel</button>
+    </div>
+</div>
+
+<script src="js/search-tutor.js"></script>
+</body>
+</html>

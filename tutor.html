@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutor - NayiPaathshala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html" class="brand">
+            <img src="image/logo.png" alt="Logo">
+            <span>NayiPaathshala</span>
+        </a>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="tutor.html" class="active">Tutor</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button id="themeToggle">🌙</button>
+</nav>
+
+<!-- HERO -->
+<section class="tutor-hero">
+    <div class="tutor-hero-left">
+        <h1>Become a Senior Mentor</h1>
+        <p>Teach, guide and inspire Class 6 to 10 students through our structured hybrid model.</p>
+
+        <ul>
+            <li>🎓 Academic Leadership</li>
+            <li>💰 Earn With Flexibility</li>
+            <li>⭐ Skill Development</li>
+        </ul>
+    </div>
+
+    <div class="tutor-hero-right">
+        <h2>Who Can Apply?</h2>
+        <ul>
+            <li>✔ College Students (Preferred Engineering Background)</li>
+            <li>✔ Strong Subject Knowledge</li>
+            <li>✔ Good Communication Skills</li>
+            <li>✔ Passion for Teaching</li>
+        </ul>
+    </div>
+</section>
+<section class="mentor-pricing">
+    <h2 class="section-title">Mentor Earning Structure</h2>
+
+    <div class="pricing-grid">
+
+        <div class="pricing-card">
+            <h3>Level 1 Mentor</h3>
+            <h4>₹100 / Hour</h4>
+            <ul>
+                <li>Teach 1 Subject</li>
+                <li>Class Focused Guidance</li>
+                <li>Basic Performance Evaluation</li>
+            </ul>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Level 2 Mentor</h3>
+            <h4>₹125 / Hour</h4>
+            <ul>
+                <li>Teach 2 Subjects</li>
+                <li>Better Academic Involvement</li>
+                <li>Consistent Student Tracking</li>
+            </ul>
+        </div>
+
+        <div class="pricing-card highlight">
+            <h3>Level 3 Mentor</h3>
+            <h4>₹150 / Hour</h4>
+            <ul>
+                <li>Multi-Subject Expert</li>
+                <li>High Performance Rating</li>
+                <li>Student Result Contribution</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <p class="performance-note">
+        * Final payment depends on performance review, student feedback and consistency.
+    </p>
+</section>
+<div class="mentor-growth-info">
+    <div class="growth-item">⭐ Performance Bonus for top mentors</div>
+    <div class="growth-item">📈 Promotion System (Level 1 → Level 3)</div>
+    <div class="growth-item">💰 Monthly Earning: ₹8,000 – ₹18,000</div>
+    <div class="growth-item">🚀 Fast growth via results & feedback</div>
+</div>
+
+<!-- FORM SECTION -->
+<section class="tutor-form-section">
+    <h2 class="section-title">Apply Now</h2>
+
+    <form class="tutor-form-card" id="mentorForm">
+
+        <div class="input-row">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="College Name" required>
+            <input type="text" placeholder="Contact Number" required>
+        </div>
+
+        <!-- Classes -->
+        <div class="form-group">
+            <label>Which Classes Can You Teach?</label>
+            <div class="checkbox-grid">
+                <label><input type="checkbox"> Class 6</label>
+                <label><input type="checkbox"> Class 7</label>
+                <label><input type="checkbox"> Class 8</label>
+                <label><input type="checkbox"> Class 9</label>
+                <label><input type="checkbox"> Class 10</label>
+            </div>
+        </div>
+
+        <!-- Subjects -->
+        <div class="form-group">
+            <label>Subjects You Can Teach</label>
+            <div class="checkbox-grid">
+                <label><input type="checkbox"> Mathematics</label>
+                <label><input type="checkbox"> Science</label>
+                <label><input type="checkbox"> English</label>
+                <label><input type="checkbox"> Social Science</label>
+                <label><input type="checkbox"> Hindi</label>
+            </div>
+        </div>
+
+        <!-- Teaching Mode -->
+        <div class="form-group">
+            <label>Preferred Teaching Mode</label>
+            <div class="checkbox-grid">
+                <label><input type="checkbox"> Offline</label>
+                <label><input type="checkbox"> Online</label>
+                <label><input type="checkbox"> Both</label>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="form-group">
+            <label>Teaching Experience</label>
+            <select required>
+                <option value="">Select Experience</option>
+                <option>Fresher</option>
+                <option>1 Year</option>
+                <option>2+ Years</option>
+                <option>3+ Years</option>
+            </select>
+        </div>
+
+        <!-- Short Bio -->
+        <div class="form-group">
+            <label>Short Introduction About You</label>
+            <textarea rows="4" placeholder="Write a short bio..."></textarea>
+        </div>
+
+        <!-- Resume -->
+        <div class="form-group">
+            <label>Upload Resume</label>
+            <input type="file">
+        </div>
+
+        <button type="submit" class="primary-btn">Submit Application</button>
+
+    </form>
+</section>
+
+<!-- SUCCESS POPUP -->
+<div class="success-popup" id="successPopup">
+    <div class="popup-content">
+        <h3>Application Submitted 🎉</h3>
+        <p>Thank you for applying as a mentor. We will contact you soon.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+<!-- HERO -->
+<section class="tutor-hero">
+    <h1>Become a Mentor at NayiPaathshala</h1>
+    <p>Guide students. Build leadership. Earn with impact.</p>
+</section>
+
+<!-- CTA -->
+<section class="cta-dark">
+    <div class="cta-dark-content">
+        <h2>Shape Young Minds With Us</h2>
+        <p>Structured Model • Academic Growth • Mentor Recognition</p>
+        <a href="#" class="primary-btn">Apply Today</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-bottom">
+        © 2026 NayiPaathshala. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

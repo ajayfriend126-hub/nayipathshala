@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - NayiPaathshala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html" class="brand">
+            <img src="image/logo.png" alt="Logo">
+            <span>NayiPaathshala</span>
+        </a>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="tutor.html">Tutor</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button id="themeToggle">🌙</button>
+</nav>
+<p></p>
+
+<!-- HERO -->
+<section class="contact-hero">
+    <p></p>
+    <h1>Contact Us</h1>
+    <p>Have questions? We're here to help you.</p>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact-container">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>Reach out for admissions, mentoring or general queries.</p>
+
+        <div class="info-box">
+            <h4>📧 Email</h4>
+            <p>ajayfriend126@gmail.com</p>
+        </div>
+
+        <div class="info-box">
+            <h4>📞 Phone</h4>
+            <p>+91-9905950976</p>
+        </div>
+
+        <div class="info-box">
+            <h4>📍 Location</h4>
+            <p>Madhepura, Bihar</p>
+        </div>
+    </div>
+    <section class="contact-map">
+    <iframe 
+        src="https://www.google.com/maps?q=Madhapura,Bihar&output=embed"
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</section>
+
+    <!-- RIGHT FORM -->
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button class="primary-btn">Send Message</button>
+    </form>
+
+</section>
+<div class="success-popup" id="successPopup">
+    <div class="popup-box">
+        <h3>Message Sent 🎉</h3>
+        <p>We will get back to you shortly.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+<!-- CTA -->
+<section class="cta-dark">
+    <div class="cta-dark-content">
+        <h2>Start Your Learning Journey</h2>
+        <p>Structured Model • Weekly Test • Mentor Support</p>
+        <a href="courses.html" class="primary-btn">Explore Courses</a>
+    </div>
+</section>
+<a href="https://wa.me/919905950976" class="whatsapp-float" target="_blank">
+    💬
+</a>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <div>
+            <h3>NayiPaathshala</h3>
+            <p>Har Student Ka Naya Shiksha Saathi</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 NayiPaathshala. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

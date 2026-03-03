@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - NayiPaathshala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html" class="brand">
+            <img src="image/logo.png" alt="Logo">
+            <span>NayiPaathshala</span>
+        </a>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="tutor.html">Tutor</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+    </ul>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button id="themeToggle">🌙</button>
+</nav>
+<!-- LOGIN SECTION -->
+<section class="login-section">
+
+    <div class="login-card">
+
+    <h2 id="loginTitle">Student Login</h2>
+
+    <!-- Role Switch -->
+    <div class="role-switch">
+        <button onclick="switchRole('Student')">Student</button>
+        <button onclick="switchRole('Tutor')">Tutor</button>
+        <button onclick="switchRole('Admin')">Admin</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm">
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button class="primary-btn">Login</button>
+        <p class="form-link" onclick="showForgot()">Forgot Password?</p>
+        <p class="form-link" onclick="showRegister()">New User? Register</p>
+    </form>
+
+    <!-- REGISTER FORM -->
+    <form id="registerForm" style="display:none;">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Create Password" required>
+        <button class="primary-btn">Register</button>
+        <p class="form-link" onclick="showLogin()">Already have account? Login</p>
+    </form>
+
+    <!-- FORGOT PASSWORD -->
+    <form id="forgotForm" style="display:none;">
+        <input type="email" placeholder="Enter your registered email" required>
+        <button class="primary-btn">Reset Password</button>
+        <p class="form-link" onclick="showLogin()">Back to Login</p>
+    </form>
+
+</div>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
