@@ -31,7 +31,7 @@ body {
 }
 
 .navbar.scrolled {
-    padding: 12px 8%;
+    padding: 18px 8%;
     box-shadow: 0 6px 25px rgba(0,0,0,0.1);
 }
 
@@ -41,7 +41,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: 12px;
+    gap: 16px;
 }
 
 .brand img {
@@ -64,7 +64,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 25px;
 }
 
 .nav-links a {
