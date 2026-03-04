@@ -227,6 +227,9 @@ form.addEventListener("submit", function(e) {
 function closePopup() {
     popup.style.display = "none";
 }
+function switchRole(role) {
+    document.getElementById("loginTitle").innerText = role + " Login";
+}
 
 function switchRole(role) {
     document.getElementById("loginTitle").innerText = role + " Login";
@@ -298,4 +301,29 @@ function closeTutorSearch() {
 }
 function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("active");
+}
+
+function switchRole(role) {
+    document.getElementById("loginTitle").innerText = role + " Login";
+}
+
+function showRegister() {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("forgotForm").style.display = "none";
+    document.getElementById("registerForm").style.display = "flex";
+    document.getElementById("loginTitle").innerText = "Create Account";
+}
+
+function showForgot() {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("registerForm").style.display = "none";
+    document.getElementById("forgotForm").style.display = "flex";
+    document.getElementById("loginTitle").innerText = "Reset Password";
+}
+
+function showLogin() {
+    document.getElementById("registerForm").style.display = "none";
+    document.getElementById("forgotForm").style.display = "none";
+    document.getElementById("loginForm").style.display = "flex";
+    document.getElementById("loginTitle").innerText = "Student Login";
 }
