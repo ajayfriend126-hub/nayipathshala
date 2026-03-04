@@ -2849,6 +2849,13 @@ padding:20px 0;
 display:none;
 }
 
+body.dark-mode .nav-links{
+background:#1e293b;
+}
+body.dark-mode .nav-links a{
+color:#e2e8f0;
+}
+
 .nav-links.active{
 display:flex;
 }
