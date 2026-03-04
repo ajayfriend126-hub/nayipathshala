@@ -1,14 +1,30 @@
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const toggleBtn = document.getElementById("themeToggle");
+
+    if (!toggleBtn) return;
+
+    // Check saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        toggleBtn.textContent = "☀️";
+    } else {
+        toggleBtn.textContent = "🌙";
+    }
 
     toggleBtn.addEventListener("click", function () {
 
         document.body.classList.toggle("dark-mode");
 
         if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
             toggleBtn.textContent = "☀️";
         } else {
+            localStorage.setItem("theme", "light");
             toggleBtn.textContent = "🌙";
         }
 
@@ -227,13 +243,7 @@ form.addEventListener("submit", function(e) {
 function closePopup() {
     popup.style.display = "none";
 }
-function switchRole(role) {
-    document.getElementById("loginTitle").innerText = role + " Login";
-}
 
-function switchRole(role) {
-    document.getElementById("loginTitle").innerText = role + " Login";
-}
 function switchRole(role) {
     document.getElementById("loginTitle").innerText = role + " Login";
 }
@@ -261,10 +271,8 @@ function showLogin() {
 
 let currentRole = "Student";
 
-function switchRole(role) {
-    currentRole = role;
-    document.getElementById("loginTitle").innerText = role + " Login";
-}
+
+
 document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -327,3 +335,26 @@ function showLogin() {
     document.getElementById("loginForm").style.display = "flex";
     document.getElementById("loginTitle").innerText = "Student Login";
 }
+function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    menu.classList.toggle("active");
+}
+
+// ===== NAVBAR AUTO ACTIVE =====
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const currentPage = window.location.pathname.split("/").pop();
+    const links = document.querySelectorAll(".nav-links a");
+
+    links.forEach(link => {
+
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
